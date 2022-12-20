@@ -1,15 +1,15 @@
 {
   "name": "@hexlet/code",
-	"type": "module",
+  "type": "module",
   "version": "1.0.0",
   "description": "[![Actions Status](https://github.com/SidorovVladimir/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/SidorovVladimir/frontend-project-44/actions)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-	"bin": {
-		"brain-games": "bin/brain-games.js"
-	},
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SidorovVladimir/Mind-Games.git"
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/SidorovVladimir/Mind-Games/issues"
   },
-  "homepage": "https://github.com/SidorovVladimir/Mind-Games#readme"
+  "homepage": "https://github.com/SidorovVladimir/Mind-Games#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
