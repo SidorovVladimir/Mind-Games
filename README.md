@@ -4,9 +4,9 @@
 ### Code Climate tests status:
 <a href="https://codeclimate.com/github/SidorovVladimir/Mind-Games/maintainability"><img src="https://api.codeclimate.com/v1/badges/b0bc7734ef7f3930d8f3/maintainability" /></a>
 
-##### Welcome to the Brain Games!
+#### Welcome to the Brain Games!
 
-##### System requirements and installation guide:
+#### System requirements and installation guide:
 
 1. Unix-like operating system.
 2. Node.js v 13 or higher:
@@ -14,14 +14,14 @@
 3. Install the latest version of npm:
 	* sudo npm install -g npm
 
-##### Follow these steps in the terminal to install "Brain Games":
+#### Follow these steps in the terminal to install "Brain Games":
 1. git clone git@github.com:SidorovVladimir/Mind-Games.git
 2. cd Mind-Games
 3. make install
 4. npm link or sudo npm link
 5. Select your game
 
-##### Demonstration of games and installation of the package:
+#### Demonstration of games and installation of the package:
  1. Brain-even - determination of an even or odd number.
 * to select this game, type a command in the terminal: **brain-even**.
 
