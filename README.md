@@ -28,13 +28,33 @@ A set of five console games based on the popular mobile brain training apps.
 
 #### Run the following commands in the terminal to install "Brain Games":
 
-1. ```git clone git@github.com:SidorovVladimir/Mind-Games.git```
+1. Clone the game repository with the command:
 
-2. ```cd Mind-Games```
+``` 
+git clone git@github.com:SidorovVladimir/Mind-Games.git 
+```
 
-3. ```make install```
+2. Go to the directory with the games with the command:
 
-4. ```npm link``` or ```sudo npm link```
+```
+cd Mind-Games
+```
+
+3. Install the dependencies with the command:
+
+```
+make install
+```
+
+4. Install the package with the command:
+
+```
+npm link
+``` 
+or 
+```
+sudo npm link
+```
 
 5. Select your game
 
