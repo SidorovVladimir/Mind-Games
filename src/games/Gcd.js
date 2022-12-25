@@ -1,5 +1,5 @@
-import getRandomNumber from '../randomNumber.js';
-import gameLogic from '../index.js';
+import getRandomNumber from '../utils.js';
+import startGeneralLogic from '../index.js';
 
 const description = 'Find the greatest common divisor of given numbers.';
 const minNumber = 0;
@@ -11,15 +11,17 @@ const getGcd = (a, b) => {
   }
   return getGcd(b, a % b);
 };
+
 const logicGameGcd = () => {
   const firstRandomNumber = getRandomNumber(minNumber, maxNumber);
   const secondRandomNumber = getRandomNumber(minNumber, maxNumber);
   const question = `${firstRandomNumber} ${secondRandomNumber}`;
   const gcd = String(getGcd(firstRandomNumber, secondRandomNumber));
+
   return [question, gcd];
 };
 
-const startGcdGame = () => {
-  gameLogic(description, logicGameGcd);
+const startGcd = () => {
+  startGeneralLogic(description, logicGameGcd);
 };
-export default startGcdGame;
+export default startGcd;

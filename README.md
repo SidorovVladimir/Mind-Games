@@ -6,43 +6,60 @@
 
 #### Welcome to the Brain Games!
 
+A set of five console games based on the popular mobile brain training apps.
+
+*	Brain-even
+* Brain-calc
+*	Brain-gcd
+*	Brain-progression
+*	Brain-prime
+
 #### System requirements and installation guide:
 
 1. Unix-like operating system.
 2. Node.js v 13 or higher:
-	* node --version
+```
+    node --version
+```
 3. Install the latest version of npm:
-	* sudo npm install -g npm
+```
+    sudo npm install -g npm
+```
 
-#### Follow these steps in the terminal to install "Brain Games":
-1. git clone git@github.com:SidorovVladimir/Mind-Games.git
-2. cd Mind-Games
-3. make install
-4. npm link or sudo npm link
+#### Run the following commands in the terminal to install "Brain Games":
+
+1. ```git clone git@github.com:SidorovVladimir/Mind-Games.git```
+
+2. ```cd Mind-Games```
+
+3. ```make install```
+
+4. ```npm link``` or ```sudo npm link```
+
 5. Select your game
 
 #### Demonstration of games and installation of the package:
  1. Brain-even - determination of an even or odd number.
-* to select this game, type a command in the terminal: **brain-even**.
+* to select this game, type a command in the terminal: **```brain-even```**.
 
 [![asciicast](https://asciinema.org/a/et3Q01t1jPaeFXVBAg0bukauh.svg)](https://asciinema.org/a/et3Q01t1jPaeFXVBAg0bukauh)
 
 2. Brain-calc - calculate the mathematical expression.
-* to select this game, type a command in the terminal: **brain-calc**.
+* to select this game, type a command in the terminal: **```brain-calc```**.
 
 [![asciicast](https://asciinema.org/a/6rDefAWq3Qm84ZWt5uEOZy49e.svg)](https://asciinema.org/a/6rDefAWq3Qm84ZWt5uEOZy49e)
 
 3. Brain-gcd - determine the greatest common divisor of two numbers.
-* to select this game, type a command in the terminal: **brain-gcd**.
+* to select this game, type a command in the terminal: **```brain-gcd```**.
 
 [![asciicast](https://asciinema.org/a/oYmo0oRGqZwJIacQbTXtr29rK.svg)](https://asciinema.org/a/oYmo0oRGqZwJIacQbTXtr29rK)
 
 4. Brain-progression - Determine the missing number.
-* to select this game, type a command in the terminal: **brain-progression**.
+* to select this game, type a command in the terminal: **```brain-progression```**.
 
 [![asciicast](https://asciinema.org/a/dqszofphQlNuWVJXnMb9Vy1TF.svg)](https://asciinema.org/a/dqszofphQlNuWVJXnMb9Vy1TF)
 
 5. Brain-prime - to determine if the number is prime.
-* to select this game, type a command in the terminal: **brain-prime**.
+* to select this game, type a command in the terminal: **```brain-prime```**.
 
 [![asciicast](https://asciinema.org/a/lcZIiC62kr5V2nuffKZAUnKEz.svg)](https://asciinema.org/a/lcZIiC62kr5V2nuffKZAUnKEz)

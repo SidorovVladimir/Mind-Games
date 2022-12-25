@@ -1,5 +1,5 @@
-import getRandomNumber from '../randomNumber.js';
-import gameLogic from '../index.js';
+import getRandomNumber from '../utils.js';
+import startGeneralLogic from '../index.js';
 
 const description = 'What is the result of the expression?';
 const minNumber = 1;
@@ -26,7 +26,8 @@ const logicGameCalc = () => {
   }
   return [question, answer];
 };
-const startCalcGame = () => {
-  gameLogic(description, logicGameCalc);
+
+const startCalc = () => {
+  startGeneralLogic(description, logicGameCalc);
 };
-export default startCalcGame;
+export default startCalc;

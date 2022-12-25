@@ -1,15 +1,15 @@
-import getRandomNumber from '../randomNumber.js';
+import getRandomNumber from '../utils.js';
 
-import gameLogic from '../index.js';
+import startGeneralLogic from '../index.js';
 
 const description = 'What number is missing in the progression?';
-
 const minStep = 1;
 const maxStep = 5;
 const minStartNumber = 0;
 const maxStartNumber = 50;
 const minLengthProgress = 5;
 const maxLengthProgress = 10;
+
 const getProgression = (a, b, c) => {
   const arr = [];
   for (let i = a; arr.length < b; i += c) {
@@ -30,7 +30,7 @@ const logicGameProgression = () => {
   return [question, answer];
 };
 
-const startProgressionGame = () => {
-  gameLogic(description, logicGameProgression);
+const startProgression = () => {
+  startGeneralLogic(description, logicGameProgression);
 };
-export default startProgressionGame;
+export default startProgression;
