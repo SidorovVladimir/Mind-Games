@@ -1,6 +1,6 @@
 import getRandomNumber from '../utils.js';
 
-import startGeneralLogic from '../index.js';
+import startGame from '../index.js';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 const minNumber = 0;
@@ -20,7 +20,7 @@ const getPrime = (num) => {
   return true;
 };
 
-const logicGamePrime = () => {
+const generateRound = () => {
   const randomNumber = getRandomNumber(minNumber, maxNumber);
   const isPrime = getPrime(randomNumber) ? 'yes' : 'no';
 
@@ -28,6 +28,6 @@ const logicGamePrime = () => {
 };
 
 const startPrime = () => {
-  startGeneralLogic(description, logicGamePrime);
+  startGame(description, generateRound);
 };
 export default startPrime;

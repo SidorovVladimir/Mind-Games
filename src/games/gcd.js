@@ -1,5 +1,5 @@
 import getRandomNumber from '../utils.js';
-import startGeneralLogic from '../index.js';
+import startGame from '../index.js';
 
 const description = 'Find the greatest common divisor of given numbers.';
 const minNumber = 0;
@@ -12,7 +12,7 @@ const getGcd = (a, b) => {
   return getGcd(b, a % b);
 };
 
-const logicGameGcd = () => {
+const generateRound = () => {
   const firstRandomNumber = getRandomNumber(minNumber, maxNumber);
   const secondRandomNumber = getRandomNumber(minNumber, maxNumber);
   const question = `${firstRandomNumber} ${secondRandomNumber}`;
@@ -22,6 +22,6 @@ const logicGameGcd = () => {
 };
 
 const startGcd = () => {
-  startGeneralLogic(description, logicGameGcd);
+  startGame(description, generateRound);
 };
 export default startGcd;

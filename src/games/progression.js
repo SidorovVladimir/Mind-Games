@@ -1,6 +1,6 @@
-import getRandomNumber from '../utils.js';
+import getRandomNumber, { getRandomIndex } from '../utils.js';
 
-import startGeneralLogic from '../index.js';
+import startGame from '../index.js';
 
 const description = 'What number is missing in the progression?';
 const minStep = 1;
@@ -18,19 +18,20 @@ const getProgression = (a, b, c) => {
   return arr;
 };
 
-const logicGameProgression = () => {
+const generateRound = () => {
   const stepArr = getRandomNumber(minStep, maxStep);
   const startNumber = getRandomNumber(minStartNumber, maxStartNumber);
   const lengthProgress = getRandomNumber(minLengthProgress, maxLengthProgress);
   const progression = getProgression(startNumber, lengthProgress, stepArr);
-  const indexProgression = Math.floor(Math.random() * progression.length);
+  const indexProgression = getRandomIndex(progression);
   const answer = String(progression[indexProgression]);
   progression[indexProgression] = '..';
   const question = progression.join(' ');
+
   return [question, answer];
 };
 
 const startProgression = () => {
-  startGeneralLogic(description, logicGameProgression);
+  startGame(description, generateRound);
 };
 export default startProgression;
