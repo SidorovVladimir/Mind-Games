@@ -13,10 +13,10 @@ const getGcd = (a, b) => {
 };
 
 const generateRound = () => {
-  const firstRandomNumber = getRandomNumber(minNumber, maxNumber);
-  const secondRandomNumber = getRandomNumber(minNumber, maxNumber);
-  const question = `${firstRandomNumber} ${secondRandomNumber}`;
-  const gcd = String(getGcd(firstRandomNumber, secondRandomNumber));
+  const number1 = getRandomNumber(minNumber, maxNumber);
+  const number2 = getRandomNumber(minNumber, maxNumber);
+  const question = `${number1} ${number2}`;
+  const gcd = String(getGcd(number1, number2));
 
   return [question, gcd];
 };
