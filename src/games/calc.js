@@ -20,15 +20,15 @@ const calculate = (x, y, operator) => {
 
 const generateRound = () => {
   const operator = operations[getRandomIndex(operations)];
-  const Number1 = getRandomNumber(minNumber, maxNumber);
-  const Number2 = getRandomNumber(minNumber, maxNumber);
-  const question = `${Number1} ${operator} ${Number2}`;
+  const number1 = getRandomNumber(minNumber, maxNumber);
+  const number2 = getRandomNumber(minNumber, maxNumber);
+  const question = `${number1} ${operator} ${number2}`;
   let answer = '';
   switch (operator) {
     case '+':
     case '-':
     case '*':
-      answer = calculate(Number1, Number2, operator).toString();
+      answer = calculate(number1, number2, operator).toString();
       break;
     default:
       throw new Error(`Unknown operator: '${operator}'!`);
