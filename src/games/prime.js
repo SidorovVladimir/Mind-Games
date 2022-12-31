@@ -7,15 +7,12 @@ const minNumber = 0;
 const maxNumber = 60;
 
 const isPrime = (number) => {
-  if (number > 1) {
-    for (let i = 2; i <= Math.sqrt(number); i += 1) {
-      if (number % i === 0) {
-        return false;
-      }
+  for (let i = 2, max = Math.sqrt(number); i <= max; i += 1) {
+    if (number % i === 0) {
+      return false;
     }
-    return true;
   }
-  return false;
+  return number > 1;
 };
 
 const generateRound = () => {
