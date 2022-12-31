@@ -7,15 +7,16 @@ const maxNumber = 10;
 const operations = ['+', '-', '*'];
 
 const calculate = (x, y, operator) => {
-  let result;
-  if (operator === '+') {
-    result = x + y;
-  } if (operator === '-') {
-    result = x - y;
-  } if (operator === '*') {
-    result = x * y;
+  switch (operator) {
+    case '+':
+      return x + y;
+    case '-':
+      return x - y;
+    case '*':
+      return x * y;
+    default:
+      throw new Error(`Unknown operator: '${operator}'!`);
   }
-  return result;
 };
 
 const generateRound = () => {
@@ -23,17 +24,9 @@ const generateRound = () => {
   const number1 = getRandomNumber(minNumber, maxNumber);
   const number2 = getRandomNumber(minNumber, maxNumber);
   const question = `${number1} ${operator} ${number2}`;
-  let answer = '';
-  switch (operator) {
-    case '+':
-    case '-':
-    case '*':
-      answer = calculate(number1, number2, operator).toString();
-      break;
-    default:
-      throw new Error(`Unknown operator: '${operator}'!`);
-  }
-  return [question, answer];
+  const expectedAnswer = String(calculate(number1, number2, operator));
+
+  return [question, expectedAnswer];
 };
 
 const startCalc = () => {
