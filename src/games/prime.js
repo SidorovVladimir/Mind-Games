@@ -1,4 +1,4 @@
-import getRandomNumber from '../utils.js';
+import { getRandomNumber } from '../utils.js';
 
 import startGame from '../index.js';
 
@@ -7,12 +7,16 @@ const minNumber = 0;
 const maxNumber = 60;
 
 const isPrime = (number) => {
-  for (let i = 2, max = Math.sqrt(number); i <= max; i += 1) {
+  const limit = Math.sqrt(number);
+  if (number <= 1) {
+    return false;
+  }
+  for (let i = 2; i <= limit; i += 1) {
     if (number % i === 0) {
       return false;
     }
   }
-  return number > 1;
+  return true;
 };
 
 const generateRound = () => {
